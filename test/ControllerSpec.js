@@ -207,7 +207,18 @@ describe('controller', function () {
 
 	describe('new todo', function () {
 		it('should add a new todo to the model', function () {
-			// TODO: write test
+			var todo = [
+				{id: 42, title: 'my first todo', completed: false}, 
+				{id: 43, title: 'my second todo', completed: false}
+			];
+	
+			setUpModel(todo);
+	
+			subject.setView('');
+
+			view.trigger('newTodo', 'my last todo')
+	
+			expect(model.create).toHaveBeenCalledWith('my last todo', jasmine.any(Function));
 		});
 
 		it('should add a new todo to the view', function () {
