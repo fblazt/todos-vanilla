@@ -59,16 +59,17 @@ describe('controller', function () {
 	});
 
 	it('should show entries on start-up', function () {
-		var todos = [
-			{id: 42, title: 'First task', completed: false}, 
-			{id: 43, title: 'Work harder', completed: true}
+		var todo = [
+			{id: 42, title: 'my first todo', completed: false}, 
+			{id: 43, title: 'my second todo', completed: false},
+			{id: 44, title: 'my last todo', completed: true}
 		];
 
-		setUpModel(todos);
+		setUpModel(todo);
 
 		subject.setView('');
 
-		expect(view.render).toHaveBeenCalledWith('showEntries', todos);
+		expect(view.render).toHaveBeenCalledWith('showEntries', todo);
 	});
 
 	describe('routing', function () {
