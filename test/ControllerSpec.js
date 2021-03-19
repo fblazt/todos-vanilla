@@ -201,7 +201,22 @@ describe('controller', function () {
 		});
 
 		it('should update the view', function () {
-			// TODO: write test
+			var todo = [
+				{id: 42, title: 'my first todo', completed: false}, 
+				{id: 43, title: 'my second todo', completed: false},
+				{id: 44, title: 'my last todo', completed: true},
+			];			
+
+			setUpModel(todo);
+
+			subject.setView('');
+
+			view.render('toggleAll', {checked: true});
+			view.trigger('toggleAll', {completed: true});
+
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {id: 42, completed: true});
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {id: 43, completed: true});	
+			expect(view.render).toHaveBeenCalledWith('toggleAll', {checked: true});
 		});
 	});
 
