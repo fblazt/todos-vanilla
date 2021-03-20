@@ -18,7 +18,13 @@ Todos is a Web App that can be used to organize your to-do or task list.
 
 ## Technical Documentation
 
-Todos Web App is an app that built based on MVC (Model-View-Controller) framework by JavaScript. Each of this parts handles its own task and functions. 
+Todos Web App is an app that built based on MVC (Model-View-Controller) architecture. Each of this parts handles its own task and functions. 
+
+1. Model is used to manage data of the application, receiving input from controller and doing CRUD operations.
+
+2. View is used to format and display the data to the user.
+
+3. Controller is used to connect view so that it can interract with model, mostly to pass data that need to be updated.
 
 Looking at the app folder structure, there is view.js file that will renders the view to the user, and communicating with controller.js file.
 
