@@ -26,15 +26,25 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
 
 3. Controller is used to connect view so that it can interract with model, mostly to pass data that need to be updated.
 
-Looking at the app folder structure, there is view.js file that will renders the view to the user, and communicating with controller.js file.
+### Files
 
-And from controller.js, it will connect the view.js and model.js, making the view updated with the database.
+#### HTML
 
-The model.js is the one that connected to the local database, updating the data by trigger from store.js.
+<b>index.html</b> - App homepage
 
-Store.js is the file that use to control the database, the database used for this project is browser's localStorage. The data that saved to localStorage is JSON data using the stringify() method, and can be read  or parsed back by using parse() method from JSON.
+#### CSS
 
-While template.js is the file that connected to the HTML element and update each element following the trigger from all of the function above.
+<b>index.css</b> - App CSS styles
+
+#### JS
+
+<b>app.js</b> - Make new to-do list.
+<b>model.js</b> - Model instance to connect between storage and view.
+<b>controller.js</b> - Connecting view with model.
+<b>helper.js</b> - Get element and attach event listener, attach handler to event for elements, basically controlling html elements with javascript.
+<b>store.js</b> - Controlling client side storage using localStorage.
+<b>template.js</b> - Setting up default template.
+<b>view.js</b> - Triggering functions from controller and rendering view to the user.
 
 ## User Guide
 
