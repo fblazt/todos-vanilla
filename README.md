@@ -1,8 +1,9 @@
-# Todos Technical Documentation
+# Todos Documentation
 
 ## Table of Contents
 
 - [About](#about)
+- [Technical Documentation](#technical-documentation)
 - [User Guide](#user-guide)
   - [Add Todo](#add-todo)
   - [Edit Todo](#edit-todo)
@@ -14,6 +15,20 @@
 ## About
 
 Todos is a Web App that can be used to organize your to-do or task list.
+
+## Technical Documentation
+
+Todos Web App is an app that built based on MVC (Model-View-Controller) framework by JavaScript. Each of this parts handles its own task and functions. 
+
+Looking at the app folder structure, there is view.js file that will renders the view to the user, and communicating with controller.js file.
+
+And from controller.js, it will connect the view.js and model.js, making the view updated with the database.
+
+The model.js is the one that connected to the local database, updating the data by trigger from store.js.
+
+Store.js is the file that use to control the database, the database used for this project is browser's localStorage. The data that saved to localStorage is JSON data using the stringify() method, and can be read  or parsed back by using parse() method from JSON.
+
+While template.js is the file that connected to the HTML element and update each element following the trigger from all of the function above.
 
 ## User Guide
 
@@ -43,3 +58,38 @@ Todos is a Web App that can be used to organize your to-do or task list.
 <p>In the bottom of main content there is an options that can be useful. Starting from the left side there is a counter for your active to-do or task. And move to the center bottom part there is an options to filter the to-do or task that will be shown, you can choose all, active, and the completed ones. And the last one on the right side there is a button to remove all of the completed todos.</p>
 
 ## Performance Audit
+
+<p>TodoListMe is a task management website that aims to have the highest usability factor possible to get todo listing done with minimum effort required. This website will be the site that used to compare with todos, a website that’s currently in development progress. Any results from this audit could be taken to improve todos website.</p>
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>Unused JavaScript codes.</td>
+    <td>The website loads slower.</td>
+    <td>Removing the unnecessary lines of code to reduce bytes consumed by network activity or request.</td>
+  </tr>
+  <tr>
+    <td>Serving or providing images in next-gen formats.</td>
+    <td>Slower download times and bigger data consumption.</td>
+    <td>Use images with better compressions.</td>
+  </tr>
+  <tr>
+    <td>Third-party code load performance.</td>
+    <td>The website loads slower.</td>
+    <td>Limiting redundant third-party providers and loading some of the codes after primary data for the page is finished loading.</td>
+  </tr>
+  <tr>
+    <td>Image elements do not have explicit size.</td>
+    <td>Images might be rendered in different sizes depending on the device used by the user.</td>
+    <td>Set an explicit width and height on each image element.</td>
+  </tr>
+  <tr>
+    <td>Using document.write()</td>
+    <td>Might delay page load on slow connection devices.</td>
+    <td>Get element by getElementsByName() or getElementById() and change the content using .innerHTML</td>
+  </tr>
+</table>
