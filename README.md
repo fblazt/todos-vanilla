@@ -39,11 +39,17 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
 #### JS
 
 <b>app.js</b> - Make new to-do list.
+<br>
 <b>model.js</b> - Model instance to connect between storage and view.
+<br>
 <b>controller.js</b> - Connecting view with model.
+<br>
 <b>helper.js</b> - Get element and attach event listener, attach handler to event for elements, basically controlling html elements with javascript.
+<br>
 <b>store.js</b> - Controlling client side storage using localStorage.
+<br>
 <b>template.js</b> - Setting up default template.
+<br>
 <b>view.js</b> - Triggering functions from controller and rendering view to the user.
 
 ## User Guide
