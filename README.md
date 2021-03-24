@@ -138,7 +138,7 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
     <td>Find the right color combination.</td>
   </tr>
   <tr>
-    <td>```<frame>``` or ```<iframe>``` elements do not have a title.</td>
+    <td>```html <frame>``` or ```html <iframe>``` elements do not have a title.</td>
     <td>Contents is not describable in screen reader.</td>
     <td>Add specific title for each elements.</td>
   </tr>
@@ -185,6 +185,6 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
   <tr>
     <td>No meta tag to optimize usage on mobile screens.</td>
     <td>Some fonts and tap targets will be too small for mobile users, .</td>
-    <td>Use ```<meta name="viewport">``` tag with width or initial-scale.</td>
+    <td>Use ```html <meta name="viewport">``` tag with width or initial-scale.</td>
   </tr>
 </table>
