@@ -81,7 +81,15 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
 
 ## Performance Audit
 
+<p>The Performance Audit was done by using Chrome's Developer Tools (Lighthouse). This will be used to measure and compare between our own app and the competitor.</p>
+
+### Competitors Website
+
 <p>TodoListMe is a task management website that aims to have the highest usability factor possible to get todo listing done with minimum effort required. This website will be the site that used to compare with todos, a website that’s currently in development progress. Any results from this audit could be taken to improve todos website.</p>
+
+<image width="100%" src='./screenshots/todolistme-audit.png' />
+
+#### Performance
 
 <table>
   <tr>
@@ -113,5 +121,70 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
     <td>Using document.write()</td>
     <td>Might delay page load on slow connection devices.</td>
     <td>Get element by getElementsByName() or getElementById() and change the content using .innerHTML</td>
+  </tr>
+</table>
+
+#### Accessibility
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>Background and foreground colors do not have a sufficient contrast ratio.</td>
+    <td>Difficult for many users to read.</td>
+    <td>Find the right color combination.</td>
+  </tr>
+  <tr>
+    <td>```<frame>``` or ```<iframe>``` elements do not have a title.</td>
+    <td>Contents is not describable in screen reader.</td>
+    <td>Add specific title for each elements.</td>
+  </tr>
+  <tr>
+    <td>Image elements do not have [alt] attributes.</td>
+    <td>Informative elements will not be descriptive for the users.</td>
+    <td>Add specific [alt] attributes for each elements.</td>
+  </tr>
+  <tr>
+    <td>Form elements do not have associated labels.</td>
+    <td>Forms is not describable in screen reader.</td>
+    <td>Add correlated label for each input elements.</td>
+  </tr>
+</table>
+
+#### Best Practices
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>JavaScript Libraries with security vulnerabilities(JQuery).</td>
+    <td>Could be easily exploited by attackers.</td>
+    <td>Update library version.</td>
+  </tr>
+  <tr>
+    <td>Serve low resolution images.</td>
+    <td>Not proportional to the display size.</td>
+    <td>Use high resolution image to increase clarity and pixel ratio.</td>
+  </tr>
+</table>
+
+#### SEO
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>No meta tag to optimize usage on mobile screens.</td>
+    <td>Some fonts and tap targets will be too small for mobile users, .</td>
+    <td>Use ```<meta name="viewport">``` tag with width or initial-scale.</td>
   </tr>
 </table>
