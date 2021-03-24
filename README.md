@@ -206,7 +206,7 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
   <tr>
     <td>Logging of an error request.</td>
     <td>A possibility that there is still unresolved problems.</td>
-    <td>Check the the request.</td>
+    <td>Check the request.</td>
   </tr>
 </table>
 
