@@ -184,7 +184,48 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
   </tr>
   <tr>
     <td>No meta tag to optimize usage on mobile screens.</td>
-    <td>Some fonts and tap targets will be too small for mobile users, .</td>
+    <td>Some fonts and tap targets will be too small for mobile users.</td>
     <td>Use meta tag with [name] attribute and add width or initial-scale.</td>
+  </tr>
+</table>
+
+### Todos Website
+
+<p>Our app overall score is already high, but there will always be rooms for improvisation, let's look at what part that need to be improved.</p>
+
+<image width="100%" src='./screenshots/todos-audit.png' />
+
+#### Best Practices
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>Logging of an error request.</td>
+    <td>A possibility that there is still unresolved problems.</td>
+    <td>Check the the request.</td>
+  </tr>
+</table>
+
+#### SEO
+
+<table>
+  <tr>
+    <td>Problem</td>
+    <td>Consequences</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>No meta tag to optimize usage on mobile screens.</td>
+    <td>Most of the users will have to pinch to zoom to be able read the content properly.</td>
+    <td>Use meta tag with [name] attribute and add width or initial-scale.</td>
+  </tr>
+  <tr>
+    <td>No meta tag for app description.</td>
+    <td>Website appeared in search results will be not descriptive enough.</td>
+    <td>Include meta descriptions to summarize page content.</td>
   </tr>
 </table>
