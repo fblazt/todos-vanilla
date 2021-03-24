@@ -16,11 +16,11 @@
 
 Todos is a Web App that can be used to organize your todo or task list. It has features that allows user to:
 
-⋅⋅* Add todo
-⋅⋅* Edit todo
-⋅⋅* Delete todo
-⋅⋅* Mark todo as completed
-⋅⋅* Filtering todo by displaying all todos, active todos, or completed todos
+- Add todo
+- Edit todo
+- Delete todo
+- Mark todo as completed
+- Filtering todo by displaying all todos, active todos, or completed todos
 
 ## Technical Documentation
 
@@ -36,21 +36,21 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
 
 #### HTML
 
-⋅⋅⋅ **index.html** - App homepage
+- **index.html** - App homepage
 
 #### CSS
 
-⋅⋅⋅ **index.css** - App CSS styles
+- **index.css** - App CSS styles
 
 #### JS
 
-⋅⋅⋅ **app.js** - Make new todo list
-⋅⋅⋅ **model.js** - Model instance to connect between storage and view
-⋅⋅⋅ **controller.js** - Connecting view with model
-⋅⋅⋅ **helper.js** - Get element and attach event listener, attach handler to event for elements, controlling html elements with javascript in general
-⋅⋅⋅ **store.js** - Controlling client side storage using localStorage
-⋅⋅⋅ **template.js** - Setting up default template
-⋅⋅⋅ **view.js** - Triggering functions from controller and rendering view to the user
+- **app.js** - Make new todo list
+- **model.js** - Model instance to connect between storage and view
+- **controller.js** - Connecting view with model
+- **helper.js** - Get element and attach event listener, attach handler to event for elements, controlling html elements with javascript in general
+- **store.js** - Controlling client side storage using localStorage
+- **template.js** - Setting up default template
+- **view.js** - Triggering functions from controller and rendering view to the user
 
 ## User Guide
 
