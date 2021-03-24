@@ -32,31 +32,25 @@ Todos Web App is an app that built based on MVC (Model-View-Controller) architec
 
 3. Controller is used to connect view so that it can interract with model, mostly to pass data that need to be updated.
 
-### Files
+### Files Structure
 
 #### HTML
 
-<b>index.html</b> - App homepage
+⋅⋅⋅<p><b>index.html</b> - App homepage</p>
 
 #### CSS
 
-<b>index.css</b> - App CSS styles
+⋅⋅⋅<p><b>index.css</b> - App CSS styles</p>
 
 #### JS
 
-<b>app.js</b> - Make new todo list.
-<br>
-<b>model.js</b> - Model instance to connect between storage and view.
-<br>
-<b>controller.js</b> - Connecting view with model.
-<br>
-<b>helper.js</b> - Get element and attach event listener, attach handler to event for elements, basically controlling html elements with javascript.
-<br>
-<b>store.js</b> - Controlling client side storage using localStorage.
-<br>
-<b>template.js</b> - Setting up default template.
-<br>
-<b>view.js</b> - Triggering functions from controller and rendering view to the user.
+⋅⋅⋅<p><b>app.js</b> - Make new todo list</p>
+⋅⋅⋅<p><b>model.js</b> - Model instance to connect between storage and view</p>
+⋅⋅⋅<p><b>controller.js</b> - Connecting view with model</p>
+⋅⋅⋅<p><b>helper.js</b> - Get element and attach event listener, attach handler to event for elements, controlling html elements with javascript in general</p>
+⋅⋅⋅<p><b>store.js</b> - Controlling client side storage using localStorage</p>
+⋅⋅⋅<p><b>template.js</b> - Setting up default template</p>
+⋅⋅⋅<p><b>view.js</b> - Triggering functions from controller and rendering view to the user</p>
 
 ## User Guide
 
